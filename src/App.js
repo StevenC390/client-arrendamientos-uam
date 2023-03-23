@@ -1,25 +1,25 @@
 /*rafce */
 import React from 'react';
 import allRoutesProject from './config/routes';
-import { BrowserRouter,Routes,Route } from './pages/NotFound';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 
 const App = () => {
   return (
     <BrowserRouter>
-    <Routes>
-      <Route>
-      {allRoutesProject.map((route,index)=>{
-        <Route 
-        key= {index} 
-        path = {route.path} 
-        element={
-        <route.Layout>
-          <route.component/>
-        </route.Layout>}></Route>
-      })}
-      </Route>
-    </Routes>
+      <Routes>
+        {allRoutesProject.map((route,index)=>(
+          <Route 
+            key= {index} 
+            path = {route.path} 
+            element={
+              <route.Layout>
+                <route.component/>
+              </route.Layout>
+              }
+            />
+        ))}
+      </Routes>
     </BrowserRouter>
   );
 };
