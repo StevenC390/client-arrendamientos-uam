@@ -2,6 +2,7 @@ import React from 'react'
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <div>Pagina Principal</div>
   )
 }
+// localhost:3000/Home

@@ -1,10 +1,15 @@
 /*rafce */
+import "./App.scss";
 import React from 'react';
-import allRoutesProject from './config/routes';
+// import {Home} from "./pages/Home";
+// import { Contact } from './pages/Contact';
+// import { NotFound } from './pages/NotFound';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import allRoutesProject from './config/routes';
 
 
-const App = () => {
+
+function App() {
   return (
     <BrowserRouter>
       <Routes>
@@ -17,7 +22,7 @@ const App = () => {
                 <route.component/>
               </route.Layout>
               }
-            />
+            ></Route>
         ))}
       </Routes>
     </BrowserRouter>

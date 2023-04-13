@@ -1,7 +1,8 @@
 /*rafc Ok*/
+/*rafce NO USAR*/
 import React from 'react'
 
-const Admin = () => {
+export const Admin = () => {
   return (
     <div>Admin</div>
   )
