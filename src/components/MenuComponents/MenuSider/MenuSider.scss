@@ -8,9 +8,8 @@
     transition: transform .3s cubic-bezier(0,.52,0,1);
     z-index: 1000;
     top:52px;
-    height: 100vh;
+    height: 100;
     border-right: 10px !important;
-    background-color: white;
     width: var(--left-menu-width);
     .menu-item-icon{
         display:flex;

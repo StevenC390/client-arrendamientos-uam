@@ -3,7 +3,7 @@ import React from 'react'
 export const NotFound = () => {
   return (
     <div>
-      <iframe src="https://giphy.com/embed/lqFHf5fYMSuKcSOJph" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/quickpage-404-page-qewy-lqFHf5fYMSuKcSOJph"></a></p>
+      <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGUzZjdiMzczYjcyMDc0YmNmYjNiZDhjNGRmNDcxZTc5ZjQzMjljNyZjdD1n/lqFHf5fYMSuKcSOJph/giphy.gif"></img>
     </div>
   );
 };

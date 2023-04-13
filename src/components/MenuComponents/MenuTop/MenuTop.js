@@ -16,7 +16,7 @@ export const MenuTop =(props) =>{
          >
             {menuCollapsed ? <MenuUnfoldOutlined/> :<MenuFoldOutlined />}
          </Button>
-         <img className="menu-top_left_logo" src={Logo} alt="Logo" />
+         <img className="menu-top_left_logo" src={Logo} alt="Logo"  />
 
          </div>
          </div>
