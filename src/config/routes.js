@@ -1,10 +1,15 @@
 /*Components > Layouts > Pages > routes*/
 import { GeneralLayout } from "../layouts/GeneralLayout";
-import {Admin} from "../pages/Admin/Admin";
-import { SignIn } from "../pages/Admin/SignIn";
+import { GeneralLayoutHome } from "../layouts/GeneralLayoutHome";
+import {Admin} from "../pages/admin/Admin";
+import { SignIn } from "../pages/admin/SignIn";
+import { Login } from "../pages/General/Login";
 import { Home } from "../pages/General/Home";
 import { Contact } from "../pages/General/Contact";
 import { NotFound } from "../pages/General/NotFound";
+import { LayoutLogin } from "../layouts/LayoutLogin";
+import { Register } from "../pages/General/Register";
+import { LayoutRegister } from "../layouts/LayoutRegister";
 
 const AdminRoutes = [
     {path:"/admin",component:Admin,Layout:GeneralLayout},
@@ -12,9 +17,11 @@ const AdminRoutes = [
 ];
 
 const GeneralRoutes = [
-    {path:"/",component:Home,Layout:GeneralLayout},
+    {path:"/home",component:Home,Layout:GeneralLayoutHome},
     {path:"/contact",component:Contact,Layout:GeneralLayout},
     {path:"*",component:NotFound,Layout:GeneralLayout},
+    {path:"/LogIn",component:Login,Layout:LayoutLogin},
+    {path:"/Register",component:Register,Layout:LayoutRegister},
 ];
 
 const allRoutesProject = [...AdminRoutes,...GeneralRoutes];
